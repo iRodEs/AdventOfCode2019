@@ -11,4 +11,4 @@ with open("entrada.txt", "r") as entrada:
     for valor in entrada.readlines():
         fuel = calcular_fuel(valor)
         total += fuel
-print("Se necesita " + str(total) + " combudstible")
+print("Se necesita " + str(total) + " combustible")
