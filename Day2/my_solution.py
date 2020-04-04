@@ -4,9 +4,6 @@ salida = False
 with open("entrada.txt", "r") as entrada:
     cinta = entrada.readline().split(",")
     while cinta[puntero] != '99' and salida is False:
-        print(puntero)
-        print(cinta)
-        print(cinta[puntero])
         if cinta[puntero] == '1':
             cinta[int(cinta[puntero+3])] = int(cinta[int(cinta[puntero+1])]) + int(cinta[int(cinta[puntero+2])])
         elif cinta[puntero] == '2':
